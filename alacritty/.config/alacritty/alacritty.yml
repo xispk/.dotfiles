@@ -1,0 +1,98 @@
+# colors:
+#   # Default colors
+#   primary:
+#     background: "#1c1c1c"
+#     foreground: "#d4d4d4"
+
+#   # Normal colors
+#   # Nord
+#   normal:
+#     black: "#888888"
+#     red: "#F44747"
+#     green: "#73C991"
+#     yellow: "#DCDCAA"
+#     blue: "#569CD6"
+#     magenta: "#D16D9E"
+#     cyan: "#4EC9B0"
+#     white: "#d8dee9"
+
+#   # Bright colors
+#   bright:
+#     black: "#888888"
+#     red: "#C586C0"
+#     green: "#6A9955"
+#     yellow: "#DCDCAA"
+#     blue: "#9CDCFE"
+#     magenta: "#D16D9E"
+#     cyan: "#4EC9B0"
+#     white: "#d8dee9"
+
+# Colors (Dark plus)
+colors:
+  primary:
+    background: '#1c1c1c'
+    foreground: '#D4D4D4'
+
+  normal:
+    black:   '#1E1E1E'
+    red:     '#F44747'
+    green:   '#608B4E'
+    yellow:  '#D7BA7D'
+    blue:    '#569CD6'
+    magenta: '#C586C0'
+    cyan:    '#9CDCFE'
+    white:   '#D4D4D4'
+
+cursor:
+  style:
+    blinking: Never
+
+font:
+  normal:
+    family: monospace 
+    style: Regular
+
+  bold:
+    family: monospace
+    style: Bold
+
+  italic:
+    family: monospace
+    style: Italic
+
+  size: 13.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 5
+    y: 5
+  
+  startup_mode: Maximized
+  dynamic_title: true
+  decorations: full
+
+scrolling:
+  history: 10000
+  multiplier: 10
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: V, mods: Control|Shift, action: Paste }
+  - { key: C, mods: Control|Shift, action: Copy }
+  - { key: Key0, mods: Control, action: ResetFontSize }
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
+  - { key: Return, mods: Control|Alt, action: CreateNewWindow }
